@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- pra facilitar a contagem do conteudo em colunas, cada coluna tem 53px -->
+<!-- cada aba da ficha totaliza 12 colunas, se baseie nessas medidas pra que, caso haja uma alteração no tamanho da planilha, facilitar o calculo de expansão -->
+<!-- o alinhamento é feito pelo top/left -->
+<!-- altura padrão da linha é 20 -->
+<form formType="sheetTemplate" dataType="MTG_Adventure" title="MTG Adventure" name="MTG_A">
+    
+    <!-- import de arquivos externos -->
+    <import file="template.xml"/>
+    <!-- titulo -->
+    <label top='0' left='0' width="636" height='20' horzTextAlign='center' text="FICHA - RPG MAGIC THE GATHERING - ZENDIKAR" />
+    
+    <!-- primeira linha -->
+    <label top='20' left='0' width="212" height='20' text="RAÇA: " />
+    <edit top='20' left='213' width="159" height='20' type='text' tabOrder='1' />
+    <label top='20' left='372' width="265" height='20' text="CLASSE: " />
+    <edit top='20' left='478' width="159" height='20' type='text' tabOrder='2' />
+    
+    <!-- segunda linha -->
+    <label top='40' left='0' width="265" height='20' text="NOME DO JOGADOR: " />
+    <edit top='40' left='266' width="265" height='20' type='text' tabOrder='3' />
+    
+    <label top='40' left='531' width="53" height='40' text="NIVEL: " />
+    <edit top='40' left='583' width="53" height='40' type='number' tabOrder='4' fontSize='26' />
+
+    <!-- terceira linha -->
+    <label top='60' left='0' width="265" height='20' text="NOME DO PERSONAGEM: " />
+    <edit top='60' left='266' width="265" height='20' type='text' tabOrder='5' />
+
+    <!-- quarta linha -->
+    <label top='80' left='0' width='106' height='20' text="ATRIBUTOS" />
+    <label top='80' left='107' width='53' height='20' text="%" />
+    <label top='80' left='160' width='53' height='20' text="MOD" />
+    <label top='80' left='212' width='53' height='20' text="BONUS" />
+    <label top='80' left='266' width='371' height='20' text="HABILIDADES DE COMBATE" />
+
+    <!-- quinta linha -->
+    <label top='100' left='0' width='106' height='20' text="FORÇA: " />
+    <edit top='100' left='107' width='53' height='20' type='number' />
+    <edit top='100' left='160' width='53' height='20' type='number' />
+    <edit top='100' left='212' width='53' height='20' type='number' />
+    <label top='100' left='266' width='371' height='20' text="HABILIDADES DE COMBATE" />
+
+    <!-- <layout left="0" top="120" width="106" height="200">
+        <label text="NOME DO JOGADOR" align="top"/>
+        <label text="NOME DO PERSONAGEM" align="top"/>
+        <label text="NOME DO PERSONAGEM" align="top"/>
+        <label text="NOME DO PERSONAGEM" align="top"/>
+        <label text="NOME DO PERSONAGEM" align="top"/>
+        <label text="NOME DO PERSONAGEM" align="top"/>
+        <label text="NOME DO PERSONAGEM" align="top"/>
+        <label text="NOME DO PERSONAGEM" align="top"/>
+        <label text="NOME DO PERSONAGEM" align="top"/>
+        <label text="NOME DO PERSONAGEM" align="top"/>
+        <label text="NOME DO PERSONAGEM" align="top"/>
+        <label text="NOME DO PERSONAGEM" align="top"/>
+        <label text="NOME DO PERSONAGEM" align="top"/>
+    </layout>
+    <layout width="200" height="100" top="0" left="200">        
+        <title></title>
+    </layout>
+    <layout width="100" height='20' top='100' left='80'>
+        <edit align="right" width="100"/>
+    </layout> -->
+    <!-- <layout left="0" height="30" width="100">
+        <label text="Força:" top="80" align="client" horzTextAlign="trailing"/>  
+        <edit align="right" margins="{left=10}" width="100"/>
+    </layout>
+    <layout left="60" top="50" width="300" height="300">
+                <button left="0" top="0" text="Botão 1"/>
+                <button left="0" top="32" text="Botão 3"/>
+        </layout>
+    <button text="Eu sou um botão" top="40" left="50" width="150"/> -->
+</form>
