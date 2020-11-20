@@ -7,39 +7,91 @@
     
     <!-- import de arquivos externos -->
     <import file="template.xml"/>
+    <import file="basicInfo.xml" />
+
     <!-- titulo -->
     <label top='0' left='0' width="636" height='20' horzTextAlign='center' text="FICHA - RPG MAGIC THE GATHERING - ZENDIKAR" />
     
-    <!-- primeira linha -->
-    <label top='20' left='0' width="212" height='20' text="RAÇA: " />
-    <edit top='20' left='213' width="159" height='20' type='text' tabOrder='1' />
-    <label top='20' left='372' width="265" height='20' text="CLASSE: " />
-    <edit top='20' left='478' width="159" height='20' type='text' tabOrder='2' />
-    
-    <!-- segunda linha -->
-    <label top='40' left='0' width="265" height='20' text="NOME DO JOGADOR: " />
-    <edit top='40' left='266' width="265" height='20' type='text' tabOrder='3' />
-    
-    <label top='40' left='531' width="53" height='40' text="NIVEL: " />
-    <edit top='40' left='583' width="53" height='40' type='number' tabOrder='4' fontSize='26' />
+    <!-- Informações básicas -->
+        <!-- RAÇA -->
+        <label top='20' left='0' width="212" height='20' text="RAÇA: " />
+        <edit top='20' left='213' width="159" height='20' type='text' tabOrder='1' />
+        <!-- CLASSE -->
+        <label top='20' left='372' width="265" height='20' text="CLASSE: " />
+        <edit top='20' left='478' width="159" height='20' type='text' tabOrder='2' />
+        <!-- NOME DO JOGADOR -->
+        <label top='40' left='0' width="265" height='20' text="NOME DO JOGADOR: " />
+        <edit top='40' left='266' width="265" height='20' type='text' tabOrder='3' />
+        <!-- NÍVEL -->
+        <label top='40' left='531' width="53" height='40' text="NÍVEL: " />
+        <edit top='40' left='583' width="53" height='40' type='number' tabOrder='4' fontSize='26' />
+        <!-- NOME DO PERSONAGEM -->
+        <label top='60' left='0' width="265" height='20' text="NOME DO PERSONAGEM: " />
+        <edit top='60' left='266' width="265" height='20' type='text' tabOrder='5' />
+    <!-- Informações básicas -->
 
-    <!-- terceira linha -->
-    <label top='60' left='0' width="265" height='20' text="NOME DO PERSONAGEM: " />
-    <edit top='60' left='266' width="265" height='20' type='text' tabOrder='5' />
+    <!-- Bloco de atributos -->
+        <label top='80' left='0' width='106' height='20' text="ATRIBUTOS" />
+        <label top='80' left='107' width='53' height='20' text="%" />
+        <label top='80' left='160' width='53' height='20' text="MOD" />
+        <label top='80' left='212' width='53' height='20' text="BONUS" />
+        <!-- FORÇA -->
+        <label top='100' left='0' width='106' height='20' text="FORÇA: " />
+        <edit top='100' left='107' width='53' height='20' type='number' />
+        <edit top='100' left='160' width='53' height='20' type='number' />
+        <edit top='100' left='212' width='53' height='20' type='number' />
+        <!-- COMP CORP -->
+        <label top='120' left='0' width='106' height='20' text="COMP CORP: " />
+        <edit top='120' left='107' width='53' height='20' type='number' />
+        <edit top='120' left='160' width='53' height='20' type='number' />
+        <edit top='120' left='212' width='53' height='20' type='number' />
+        <!-- COOR MOT -->
+        <label top='140' left='0' width='106' height='20' text="COOR MOT: " />
+        <edit top='140' left='107' width='53' height='20' type='number' />
+        <edit top='140' left='160' width='53' height='20' type='number' />
+        <edit top='140' left='212' width='53' height='20' type='number' />
+        <!-- AGILIDADE -->
+        <label top='160' left='0' width='106' height='20' text="AGILIDADE: " />
+        <edit top='160' left='107' width='53' height='20' type='number' />
+        <edit top='160' left='160' width='53' height='20' type='number' />
+        <edit top='160' left='212' width='53' height='20' type='number' />
+        <!-- INTELIGÊNCIA -->
+        <label top='180' left='0' width='106' height='20' text="INTELIGÊNCIA: " />
+        <edit top='180' left='107' width='53' height='20' type='number' />
+        <edit top='180' left='160' width='53' height='20' type='number' />
+        <edit top='180' left='212' width='53' height='20' type='number' />
+        <!-- FOR DE VONT -->
+        <label top='200' left='0' width='106' height='20' text="FOR DE VONT: " />
+        <edit top='200' left='107' width='53' height='20' type='number' />
+        <edit top='200' left='160' width='53' height='20' type='number' />
+        <edit top='200' left='212' width='53' height='20' type='number' />
+        <!-- SANIDADE -->
+        <label top='220' left='0' width='106' height='20' text="SANIDADE: " />
+        <edit top='220' left='107' width='53' height='20' type='number' />
+        <edit top='220' left='160' width='53' height='20' type='number' />
+        <edit top='220' left='212' width='53' height='20' type='number' />
+        <!-- SENTIDOS -->
+        <label top='240' left='0' width='106' height='20' text="SENTIDOS: " />
+        <edit top='240' left='107' width='53' height='20' type='number' />
+        <edit top='240' left='160' width='53' height='20' type='number' />
+        <edit top='240' left='212' width='53' height='20' type='number' />
+        <!-- SIMPATIA -->
+        <label top='260' left='0' width='106' height='20' text="SIMPATIA: " />
+        <edit top='260' left='107' width='53' height='20' type='number' />
+        <edit top='260' left='160' width='53' height='20' type='number' />
+        <edit top='260' left='212' width='53' height='20' type='number' />
+        <!-- SORTE -->
+        <label top='280' left='0' width='106' height='20' text="SORTE: " />
+        <edit top='280' left='107' width='53' height='20' type='number' />
+        <edit top='280' left='160' width='53' height='20' type='number' />
+        <edit top='280' left='212' width='53' height='20' type='number' />
+        <!-- ACERTO CRÍTICO -->
+        <label top='300' left='0' width='106' height='20' text="ACERTO CRÍTICO: " />
+        <edit top='300' left='107' width='53' height='20' type='number' />
+    <!-- Bloco de atributos -->
 
-    <!-- quarta linha -->
-    <label top='80' left='0' width='106' height='20' text="ATRIBUTOS" />
-    <label top='80' left='107' width='53' height='20' text="%" />
-    <label top='80' left='160' width='53' height='20' text="MOD" />
-    <label top='80' left='212' width='53' height='20' text="BONUS" />
-    <label top='80' left='266' width='371' height='20' text="HABILIDADES DE COMBATE" />
-
-    <!-- quinta linha -->
-    <label top='100' left='0' width='106' height='20' text="FORÇA: " />
-    <edit top='100' left='107' width='53' height='20' type='number' />
-    <edit top='100' left='160' width='53' height='20' type='number' />
-    <edit top='100' left='212' width='53' height='20' type='number' />
-    <label top='100' left='266' width='371' height='20' text="HABILIDADES DE COMBATE" />
+    <!-- quadro de equipamentos -->
+    <label top='80' left='266' width='371' height='20' text="EQUIPAMENTOS" />
 
     <!-- <layout left="0" top="120" width="106" height="200">
         <label text="NOME DO JOGADOR" align="top"/>
