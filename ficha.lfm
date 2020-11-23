@@ -174,7 +174,7 @@
     <!-- quadro de equipamentos -->
 
     <!-- aperfeiçoamentos -->
-    <label top='449' left='0' width='106' height='20' text="APERFEIÇOAMENTOS" />
+    <label top='449' left='0' width='636' height='20' text="APERFEIÇOAMENTOS" />
     <!-- aperfeiçoamentos -->
 
     <!-- <rectangle top='110' left='336' width='69' height='240' color='transparent' strokeColor="red" strokeSize="1" /> -->

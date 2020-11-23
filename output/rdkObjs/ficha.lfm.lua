@@ -766,7 +766,7 @@ local function constructNew_MTG_A()
     obj.label45:setParent(obj);
     obj.label45:setTop(449);
     obj.label45:setLeft(0);
-    obj.label45:setWidth(106);
+    obj.label45:setWidth(636);
     obj.label45:setHeight(20);
     obj.label45:setText("APERFEIÇOAMENTOS");
     obj.label45:setName("label45");
