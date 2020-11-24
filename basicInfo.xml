@@ -1,21 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<group>
-    <template name="basic_info">
-        <!-- Informações básicas -->
-        <!-- RAÇA -->
-        <label top='20' left='0' width="212" height='20' text="RAÇA: " />
-        <edit top='20' left='213' width="159" height='20' type='text' tabOrder='1' />
-        <!-- CLASSE -->
-        <label top='20' left='372' width="265" height='20' text="CLASSE: " />
-        <edit top='20' left='478' width="159" height='20' type='text' tabOrder='2' />
-        <!-- NOME DO JOGADOR -->
-        <label top='40' left='0' width="265" height='20' text="NOME DO JOGADOR: " />
-        <edit top='40' left='266' width="265" height='20' type='text' tabOrder='3' />
-        <!-- NÍVEL -->
-        <label top='40' left='531' width="53" height='40' text="NÍVEL: " />
-        <edit top='40' left='583' width="53" height='40' type='number' tabOrder='4' fontSize='26' />
-        <!-- NOME DO PERSONAGEM -->
-        <label top='60' left='0' width="265" height='20' text="NOME DO PERSONAGEM: " />
-        <edit top='60' left='266' width="265" height='20' type='text' tabOrder='5' />
-    </template>
-</group>
+<template name="basic_info">
+    <label top='20' left='0' width="212" height='20' text="RAÇA: " />
+    <edit top='20' left='213' width="159" height='20' type='text' tabOrder='1' />
+    <label top='20' left='372' width="265" height='20' text="CLASSE: " />
+    <edit top='20' left='478' width="159" height='20' type='text' tabOrder='2' />
+    <label top='40' left='0' width="265" height='20' text="NOME DO JOGADOR: " />
+    <edit top='40' left='266' width="265" height='20' type='text' tabOrder='3' />
+    <label top='40' left='531' width="53" height='40' text="NÍVEL: " />
+    <edit top='40' left='583' width="53" height='40' type='number' tabOrder='4' fontSize='26' />
+    <label top='60' left='0' width="265" height='20' text="NOME DO PERSONAGEM: " />
+    <edit top='60' left='266' width="265" height='20' type='text' tabOrder='5' />
+</template>

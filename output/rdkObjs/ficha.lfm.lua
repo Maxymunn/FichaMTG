@@ -775,62 +775,62 @@ local function constructNew_MTG_A()
     obj._e_event0 = obj.dataLink1:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             sheet.attrFOR_mod = math.floor((sheet.attrFOR_edit or 40) / 10 - 4)* 5;
-                            sheet.attrFOR_bonus = math.floor((sheet.attrFOR_edit or 40) / 10 - 4);
+                        sheet.attrFOR_bonus = math.floor((sheet.attrFOR_edit or 40) / 10 - 4);
         end, obj);
 
     obj._e_event1 = obj.dataLink2:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             sheet.attrCC_mod = math.floor((sheet.attrCC_edit or 40) / 10 - 4)* 5;
-                            sheet.attrCC_bonus = math.floor((sheet.attrCC_edit or 40) / 10 - 4);
+                        sheet.attrCC_bonus = math.floor((sheet.attrCC_edit or 40) / 10 - 4);
         end, obj);
 
     obj._e_event2 = obj.dataLink3:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             sheet.attrCM_mod = math.floor((sheet.attrCM_edit or 40) / 10 - 4)* 5;
-                            sheet.attrCM_bonus = math.floor((sheet.attrCM_edit or 40) / 10 - 4);
+                        sheet.attrCM_bonus = math.floor((sheet.attrCM_edit or 40) / 10 - 4);
         end, obj);
 
     obj._e_event3 = obj.dataLink4:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             sheet.attrAGI_mod = math.floor((sheet.attrAGI_edit or 40) / 10 - 4)* 5;
-                            sheet.attrAGI_bonus = math.floor((sheet.attrAGI_edit or 40) / 10 - 4);
+                        sheet.attrAGI_bonus = math.floor((sheet.attrAGI_edit or 40) / 10 - 4);
         end, obj);
 
     obj._e_event4 = obj.dataLink5:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             sheet.attrINT_mod = math.floor((sheet.attrINT_edit or 40) / 10 - 4)* 5;
-                            sheet.attrINT_bonus = math.floor((sheet.attrINT_edit or 40) / 10 - 4);
+                        sheet.attrINT_bonus = math.floor((sheet.attrINT_edit or 40) / 10 - 4);
         end, obj);
 
     obj._e_event5 = obj.dataLink6:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             sheet.attrFV_mod = math.floor((sheet.attrFV_edit or 40) / 10 - 4)* 5;
-                            sheet.attrFV_bonus = math.floor((sheet.attrFV_edit or 40) / 10 - 4);
+                        sheet.attrFV_bonus = math.floor((sheet.attrFV_edit or 40) / 10 - 4);
         end, obj);
 
     obj._e_event6 = obj.dataLink7:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             sheet.attrSAN_mod = math.floor((sheet.attrSAN_edit or 40) / 10 - 4)* 5;
-                            sheet.attrSAN_bonus = math.floor((sheet.attrSAN_edit or 40) / 10 - 4);
+                        sheet.attrSAN_bonus = math.floor((sheet.attrSAN_edit or 40) / 10 - 4);
         end, obj);
 
     obj._e_event7 = obj.dataLink8:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             sheet.attrSEN_mod = math.floor((sheet.attrSEN_edit or 40) / 10 - 4)* 5;
-                            sheet.attrSEN_bonus = math.floor((sheet.attrSEN_edit or 40) / 10 - 4);
+                        sheet.attrSEN_bonus = math.floor((sheet.attrSEN_edit or 40) / 10 - 4);
         end, obj);
 
     obj._e_event8 = obj.dataLink9:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             sheet.attrSIM_mod = math.floor((sheet.attrSIM_edit or 40) / 10 - 4)* 5;
-                            sheet.attrSIM_bonus = math.floor((sheet.attrSIM_edit or 40) / 10 - 4);
+                        sheet.attrSIM_bonus = math.floor((sheet.attrSIM_edit or 40) / 10 - 4);
         end, obj);
 
     obj._e_event9 = obj.dataLink10:addEventListener("onChange",
         function (_, field, oldValue, newValue)
             sheet.attrSOR_mod = math.floor((sheet.attrSOR_edit or 40) / 10 - 4)* 5;
-                            sheet.attrSOR_bonus = math.floor((sheet.attrSOR_edit or 40) / 10 - 4);
-                            sheet.attrAC_value = math.floor(sheet.attrSOR_edit / 5)
+                        sheet.attrSOR_bonus = math.floor((sheet.attrSOR_edit or 40) / 10 - 4);
+                        sheet.attrAC_value = math.floor(sheet.attrSOR_edit / 5)
         end, obj);
 
     function obj:_releaseEvents()

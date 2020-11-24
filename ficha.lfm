@@ -3,178 +3,72 @@
 <!-- cada aba da ficha totaliza 12 colunas, se baseie nessas medidas pra que, caso haja uma alteração no tamanho da planilha, facilitar o calculo de expansão -->
 <!-- o alinhamento é feito pelo top/left -->
 <!-- altura padrão da linha é 20 -->
+<!-- comentário em blocos podem gerar erros, prefira o comentário inline -->
 <form formType="sheetTemplate" dataType="MTG_Adventure" title="MTG Adventure" name="MTG_A">
     
     <!-- import de arquivos externos -->
-    <import file="template.xml"/>
-    <!-- <import file="basicInfo.xml" /> -->
+    <import file="template.xml" />
+    <import file="basicInfo.xml" />
+    <import file='attrInfo.xml' />
+    <import file='equipmentInfo.xml' />
+    <import file='aperfInfo.xml' />
+    <!-- <import file='aperfTemplate.lfm' /> -->
 
+
+    <!-- <my_button></my_button> -->
     <!-- titulo -->
     <label top='0' left='0' width="636" height='20' horzTextAlign='center' text="FICHA - RPG MAGIC THE GATHERING - ZENDIKAR" />
     
     <!-- Informações básicas -->
-        <!-- RAÇA -->
-        <label top='20' left='0' width="212" height='20' text="RAÇA: " />
-        <edit top='20' left='213' width="159" height='20' type='text' tabOrder='1' />
-        <!-- CLASSE -->
-        <label top='20' left='372' width="265" height='20' text="CLASSE: " />
-        <edit top='20' left='478' width="159" height='20' type='text' tabOrder='2' />
-        <!-- NOME DO JOGADOR -->
-        <label top='40' left='0' width="265" height='20' text="NOME DO JOGADOR: " />
-        <edit top='40' left='266' width="265" height='20' type='text' tabOrder='3' />
-        <!-- NÍVEL -->
-        <label top='40' left='531' width="53" height='40' text="NÍVEL: " />
-        <edit top='40' left='583' width="53" height='40' type='number' tabOrder='4' fontSize='26' />
-        <!-- NOME DO PERSONAGEM -->
-        <label top='60' left='0' width="265" height='20' text="NOME DO PERSONAGEM: " />
-        <edit top='60' left='266' width="265" height='20' type='text' tabOrder='5' />
+        <basic_info></basic_info>
     <!-- Informações básicas -->
-
     <!-- Bloco de atributos -->
-        <label top='80' left='0' width='106' height='20' text="ATRIBUTOS" />
-        <label top='80' left='107' width='53' height='20' text="%" />
-        <label top='80' left='160' width='53' height='20' text="MOD(%)" />
-        <label top='80' left='212' width='53' height='20' text="BONUS" />
-        <!-- FORÇA -->
-        <label top='100' left='0' width='106' height='20' text="FORÇA: " />
-        <edit top='100' left='107' width='53' height='20' field="attrFOR_edit" type='number' />
-        <label top='100' left='160' width='53' height='20' field="attrFOR_mod" />
-        <label top='100' left='212' width='53' height='20' field="attrFOR_bonus" />
-        <dataLink field="attrFOR_edit">
-            <event name='onChange'>
-                sheet.attrFOR_mod = math.floor((sheet.attrFOR_edit or 40) / 10 - 4)* 5;
-                sheet.attrFOR_bonus = math.floor((sheet.attrFOR_edit or 40) / 10 - 4);
-            </event>
-        </dataLink>
-        <!-- COMP CORP -->
-        <label top='120' left='0' width='106' height='20' text="COMP CORP: " />
-        <edit top='120' left='107' width='53' height='20' field='attrCC_edit' type='number' />
-        <label top='120' left='160' width='53' height='20' field='attrCC_mod' />
-        <label top='120' left='212' width='53' height='20' field='attrCC_bonus' />
-        <dataLink field="attrCC_edit">
-            <event name='onChange'>
-                sheet.attrCC_mod = math.floor((sheet.attrCC_edit or 40) / 10 - 4)* 5;
-                sheet.attrCC_bonus = math.floor((sheet.attrCC_edit or 40) / 10 - 4);
-            </event>
-        </dataLink>
-        <!-- COOR MOT -->
-        <label top='140' left='0' width='106' height='20' text="COOR MOT: " />
-        <edit top='140' left='107' width='53' height='20' field='attrCM_edit' />
-        <label top='140' left='160' width='53' height='20' field='attrCM_mod' />
-        <label top='140' left='212' width='53' height='20' field='attrCM_bonus' />
-        <dataLink field="attrCM_edit">
-            <event name='onChange'>
-                sheet.attrCM_mod = math.floor((sheet.attrCM_edit or 40) / 10 - 4)* 5;
-                sheet.attrCM_bonus = math.floor((sheet.attrCM_edit or 40) / 10 - 4);
-            </event>
-        </dataLink>
-        <!-- AGILIDADE -->
-        <label top='160' left='0' width='106' height='20' text="AGILIDADE: " />
-        <edit top='160' left='107' width='53' height='20' field='attrAGI_edit' />
-        <label top='160' left='160' width='53' height='20' field='attrAGI_mod' />
-        <label top='160' left='212' width='53' height='20' field='attrAGI_bonus' />
-        <dataLink field="attrAGI_edit">
-            <event name='onChange'>
-                sheet.attrAGI_mod = math.floor((sheet.attrAGI_edit or 40) / 10 - 4)* 5;
-                sheet.attrAGI_bonus = math.floor((sheet.attrAGI_edit or 40) / 10 - 4);
-            </event>
-        </dataLink>
-        <!-- INTELIGÊNCIA -->
-        <label top='180' left='0' width='106' height='20' text="INTELIGÊNCIA: " />
-        <edit top='180' left='107' width='53' height='20' field='attrINT_edit' />
-        <label top='180' left='160' width='53' height='20' field='attrINT_mod' />
-        <label top='180' left='212' width='53' height='20' field='attrINT_bonus' />
-        <dataLink field="attrINT_edit">
-            <event name='onChange'>
-                sheet.attrINT_mod = math.floor((sheet.attrINT_edit or 40) / 10 - 4)* 5;
-                sheet.attrINT_bonus = math.floor((sheet.attrINT_edit or 40) / 10 - 4);
-            </event>
-        </dataLink>
-        <!-- FOR DE VONT -->
-        <label top='200' left='0' width='106' height='20' text="FOR DE VONT: " />
-        <edit top='200' left='107' width='53' height='20' field='attrFV_edit' />
-        <label top='200' left='160' width='53' height='20' field='attrFV_mod' />
-        <label top='200' left='212' width='53' height='20' field='attrFV_bonus' />
-        <dataLink field="attrFV_edit">
-            <event name='onChange'>
-                sheet.attrFV_mod = math.floor((sheet.attrFV_edit or 40) / 10 - 4)* 5;
-                sheet.attrFV_bonus = math.floor((sheet.attrFV_edit or 40) / 10 - 4);
-            </event>
-        </dataLink>
-        <!-- SANIDADE -->
-        <label top='220' left='0' width='106' height='20' text="SANIDADE: " />
-        <edit top='220' left='107' width='53' height='20' field='attrSAN_edit' />
-        <label top='220' left='160' width='53' height='20' field='attrSAN_mod' />
-        <label top='220' left='212' width='53' height='20' field='attrSAN_bonus' />
-        <dataLink field="attrSAN_edit">
-            <event name='onChange'>
-                sheet.attrSAN_mod = math.floor((sheet.attrSAN_edit or 40) / 10 - 4)* 5;
-                sheet.attrSAN_bonus = math.floor((sheet.attrSAN_edit or 40) / 10 - 4);
-            </event>
-        </dataLink>
-        <!-- SENTIDOS -->
-        <label top='240' left='0' width='106' height='20' text="SENTIDOS: " />
-        <edit top='240' left='107' width='53' height='20' field='attrSEN_edit' />
-        <label top='240' left='160' width='53' height='20' field='attrSEN_mod' />
-        <label top='240' left='212' width='53' height='20' field='attrSEN_bonus' />
-        <dataLink field="attrSEN_edit">
-            <event name='onChange'>
-                sheet.attrSEN_mod = math.floor((sheet.attrSEN_edit or 40) / 10 - 4)* 5;
-                sheet.attrSEN_bonus = math.floor((sheet.attrSEN_edit or 40) / 10 - 4);
-            </event>
-        </dataLink>
-        <!-- SIMPATIA -->
-        <label top='260' left='0' width='106' height='20' text="SIMPATIA: " />
-        <edit top='260' left='107' width='53' height='20' field='attrSIM_edit' />
-        <label top='260' left='160' width='53' height='20' field='attrSIM_mod' />
-        <label top='260' left='212' width='53' height='20' field='attrSIM_bonus' />
-        <dataLink field="attrSIM_edit">
-            <event name='onChange'>
-                sheet.attrSIM_mod = math.floor((sheet.attrSIM_edit or 40) / 10 - 4)* 5;
-                sheet.attrSIM_bonus = math.floor((sheet.attrSIM_edit or 40) / 10 - 4);
-            </event>
-        </dataLink>
-        <!-- SORTE -->
-        <label top='280' left='0' width='106' height='20' text="SORTE: " />
-        <edit top='280' left='107' width='53' height='20' field='attrSOR_edit' />
-        <label top='280' left='160' width='53' height='20' field='attrSOR_mod' />
-        <label top='280' left='212' width='53' height='20' field='attrSOR_bonus' />
-        <!-- ACERTO CRÍTICO -->
-        <label top='300' left='0' width='106' height='20' text="ACERTO CRÍTICO: " />
-        <label top='300' left='107' width='53' height='20' field='attrAC_value' />
-        <dataLink field="attrSOR_edit">
-            <event name='onChange'>
-                sheet.attrSOR_mod = math.floor((sheet.attrSOR_edit or 40) / 10 - 4)* 5;
-                sheet.attrSOR_bonus = math.floor((sheet.attrSOR_edit or 40) / 10 - 4);
-                sheet.attrAC_value = math.floor(sheet.attrSOR_edit / 5)
-            </event>
-        </dataLink>
-        <!-- INICIATIVA E DESLOCAMENTO -->
-        <label top='320' left='0' width='106' height='20' text='INI/DESL: ' />
-        <edit top='320' left='107' width='53' height='20' field='attrINIDESL_edit' />
+        <attr_info></attr_info>
     <!-- Bloco de atributos -->
 
     <!-- quadro de equipamentos -->
-    <label top='80' left='266' width='371' height='20' text="EQUIPAMENTOS" />
-    <image top='100' left='276' width='399' height='349' editable='false' style='autoFit' field='./inventory.JPG' />
-    <!-- MAIN HAND -->
-    <image top='171' left='317' width='69' height='131' field='main_hand' editable='true' style='autoFit' />
-    <!-- HELMET -->
-    <image top='162' left='440' width='69' height='68' field='helmet' editable='true' style='autoFit' />
-    <!-- GLOVES -->
-    <image top='305' left='363' width='69' height='68' field='gloves' editable='true' style='autoFit' />
-    <!-- BODY ARMOUR -->
-    <image top='235' left='440' width='69' height='95' field='body_armour' editable='true' style='autoFit' />
-    <!-- BELT -->
-    <image top='337' left='440' width='69' height='35' field='belt' editable='true' style='autoFit' />
-    <!-- BOOTS -->
-    <image top='305' left='519' width='69' height='68' field='boots' editable='true' style='autoFit' />
-    <!-- OFF HAND -->
-    <image top='171' left='565' width='69' height='131' field='off_hand' editable='true' style='autoFit' />
+        <equipment_info></equipment_info>
     <!-- quadro de equipamentos -->
 
     <!-- aperfeiçoamentos -->
-    <label top='449' left='0' width='636' height='20' text="APERFEIÇOAMENTOS" />
+        <aperf_info></aperf_info>
+        <!-- Botão de inserir novo item à lista -->
+        <!-- <layout align="top" height="30" margins="{bottom=4}"> -->
+            <!-- <button text="Criar Novo Item" width="150" align="left"> -->
+                <!-- <event name="onClick"> -->
+                    <!-- self.rclListaDosItens:append(); -->
+                <!-- </event> -->
+            <!-- </button> -->
+        <!-- </layout>        -->
+
+        <!-- recordList, representando a lista -->
+        <!-- <recordList name="rclListaDosItens" field="campoDosItens" templateForm="frmItemDaLista" align="client" selectable="true">                               -->
+            <!-- <event name="onSelect"> -->
+      <!-- ;;          local node = self.rclListaDosItens.selectedNode;  -->
+     <!-- ;           self.boxDetalhesDoItem.node = node;                        -->
+                <!-- self.boxDetalhesDoItem.visible = (node ~= nil); -->
+            <!-- </event> -->
+        <!-- </recordList>        -->
+
+        <!-- dataScopeBox representando a nossa caixa de detalhes -->  
+        <!-- <dataScopeBox name="boxDetalhesDoItem" visible="false" align="right" width="400" margins="{left=4, right=4}"> -->
+        <!-- Faça um layout "bonito" para sua caixa de detalhes =). Utilize a propriedade "field" nas tags aqui dentro   -->       
+            <!-- <rectangle align="top" color="black" xradius="10" yradius="10" height="180" padding="{top=3, left=3, right=3, bottom=3}"> -->
+                <!-- <layout align="top" height="30" margins="{bottom=4}"> -->
+                    <!-- <label align="left" text="Titulo do Item:" autoSize="true"/> -->
+                    <!-- <edit align="client" field="campoTitulo"/> -->
+                <!-- </layout>                        -->
+
+                <!-- <layout align="top" height="130">               -->
+                    <!-- <image align="left" editable="true" field="campoURLImagem" width="130"/>                                -->
+<!--  -->
+                    <!-- <layout align="client" margins="{left=2}"> -->
+                        <!-- <edit align="top" field="campoSubTitulo" height="30"/> -->
+                        <!-- <textEditor align="top" field="campoTextoGrande" height="100"/> -->
+                    <!-- </layout>                       -->
+                <!-- </layout> -->
+            <!-- </rectangle> -->
+        <!-- </dataScopeBox>  -->
     <!-- aperfeiçoamentos -->
 
     <!-- <rectangle top='110' left='336' width='69' height='240' color='transparent' strokeColor="red" strokeSize="1" /> -->
