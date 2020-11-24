@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<template name='equipment_info'>
+    <label top='80' left='266' width='371' height='20' text="EQUIPAMENTOS" />
+    <image top='100' left='276' width='399' height='349' editable='false' style='autoFit' field='./inventory.JPG' />
+    <image top='171' left='317' width='69' height='131' field='main_hand' editable='true' style='autoFit' />
+    <image top='162' left='440' width='69' height='68' field='helmet' editable='true' style='autoFit' />
+    <image top='305' left='363' width='69' height='68' field='gloves' editable='true' style='autoFit' />
+    <image top='235' left='440' width='69' height='95' field='body_armour' editable='true' style='autoFit' />
+    <image top='337' left='440' width='69' height='35' field='belt' editable='true' style='autoFit' />
+    <image top='305' left='519' width='69' height='68' field='boots' editable='true' style='autoFit' />
+    <image top='171' left='565' width='69' height='131' field='off_hand' editable='true' style='autoFit' />
+</template>
