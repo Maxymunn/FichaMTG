@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module sdkVersion="3.5">
-    <id>MTG_ADVENTURE</id>
-    <version>1.0</version>
-    <name>MTG-Adventure</name>
-    <description>Ficha de Magic - The Gathering, criada, testada e personalizada pelo Mestre, Ardun, Raruk, Ahmya, Raijin, Vankar, Jorgin, Vass e Barix</description>
-    <author>Max</author>
-    <site>https://github.com/Maxymunn/FichaMTG</site>
-    <contact>@Maxymunn</contact>
+	<id>MTG_ADVENTURE</id>
+	<version>1.0</version>
+	<name>MTG-Adventure</name>
+	<description>Ficha de Magic - The Gathering, criada, testada e personalizada pelo Mestre, Ardun, Raruk, Ahmya, Raijin, Vankar, Jorgin, Vass e Barix</description>
+	<author>Max</author>
+	<site>https://github.com/Maxymunn/FichaMTG</site>
+	<contact>@Maxymunn</contact>
 </module>

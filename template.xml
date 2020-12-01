@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- btn-text -->
 <group>
-    <style>
-        label {
-            fontColor: lime;
-        }
-    </style>       
+	<style>
+		label {
+				fontColor: lime;
+		}
+	</style>       
 
-    <template name="my_button">
-        <button left="20" top="120" text="$(titulo)"/>
-    </template> 
-    <template name="title">
-        <label align="client" horzTextAlign="center" text="Estou em outro documento"/>
-    </template>
+	<template name="my_button">
+		<button left="20" top="120" text="$(titulo)"/>
+	</template> 
+	<template name="title">
+		<label align="client" horzTextAlign="center" text="Estou em outro documento"/>
+	</template>
 </group>

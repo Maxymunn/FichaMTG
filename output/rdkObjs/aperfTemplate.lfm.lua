@@ -53,7 +53,7 @@ local function constructNew_frmItemDaLista()
 
     obj._e_event0 = obj.button1:addEventListener("onClick",
         function (_)
-            ndb.deleteNode(sheet);
+            NDB.deleteNode(sheet);
         end, obj);
 
     function obj:_releaseEvents()
